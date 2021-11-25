@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{92FD5DCB-E5CD-4506-B2A5-DC257767BDE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FDDD9D85-3EBB-464E-B722-54390411A90F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wookie.Marketplace.API", "Wookie.Marketplace.API\Wookie.Marketplace.API.csproj", "{E8678AFA-4121-45C0-AD32-785695612B87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wookie.Marketplace.API.Unit.Tests", "Wookie.Marketplace.API.Unit.Tests\Wookie.Marketplace.API.Unit.Tests.csproj", "{306A207E-BB83-43EF-B951-825B11E57B54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8678AFA-4121-45C0-AD32-785695612B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8678AFA-4121-45C0-AD32-785695612B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8678AFA-4121-45C0-AD32-785695612B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8678AFA-4121-45C0-AD32-785695612B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306A207E-BB83-43EF-B951-825B11E57B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306A207E-BB83-43EF-B951-825B11E57B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306A207E-BB83-43EF-B951-825B11E57B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306A207E-BB83-43EF-B951-825B11E57B54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E8678AFA-4121-45C0-AD32-785695612B87} = {92FD5DCB-E5CD-4506-B2A5-DC257767BDE7}
+		{306A207E-BB83-43EF-B951-825B11E57B54} = {FDDD9D85-3EBB-464E-B722-54390411A90F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E04BFB9-E8A5-436D-A0D5-280EE467954F}
+	EndGlobalSection
+EndGlobal
