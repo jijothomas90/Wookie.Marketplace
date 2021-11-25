@@ -22,7 +22,7 @@ namespace Wookie.Marketplace.API.Repository
                 Description = "The Alchemist is a novel by Brazilian author Paulo Coelho that was first published in 1988.",
                 Author = "Paulo Coelho",
                 CoverImage = File.ReadAllBytes(Path.Combine(ImageRootPath,"TheAlchemistCoverPage.jpg")),
-                Price = 280.00m
+                Price = 580.00m
             },
             new Book()
             {
