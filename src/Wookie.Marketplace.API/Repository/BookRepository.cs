@@ -30,7 +30,7 @@ namespace Wookie.Marketplace.API.Repository
                 Title = "The Alchemist 2",
                 Description = "The Alchemist is a novel by Brazilian author Paulo Coelho that was first published in 1988.",
                 Author = "Paulo Coelho",
-                Price = 380.00m
+                Price = 390.00m
             }
         };
 
