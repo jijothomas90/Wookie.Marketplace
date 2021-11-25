@@ -10,7 +10,8 @@ using Xunit;
 
 namespace Wookie.Marketplace.API.Unit.Tests
 {
-       public class BooksControllerTest
+    //Methods for Unit testing
+    public class BooksControllerTest
     {
         private readonly HttpClient httpClient;
         public BooksControllerTest()
@@ -24,13 +25,12 @@ namespace Wookie.Marketplace.API.Unit.Tests
         public async Task GetAllTest()
         {
             //Arrange
-
             var request = new HttpRequestMessage(HttpMethod.Get, "/api/books");
 
             //Act
             var response = await httpClient.SendAsync(request);
 
-            //Asert
+            //Assert
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }
 
@@ -38,7 +38,7 @@ namespace Wookie.Marketplace.API.Unit.Tests
         [Fact]
         public async Task GetTestbyId()
         {
-             //Arrange
+            //Arrange
             var request = new HttpRequestMessage(HttpMethod.Get, "api/books/1");
 
             //Act
@@ -58,10 +58,10 @@ namespace Wookie.Marketplace.API.Unit.Tests
         {
             var book = new Book()
             {
-                Title = "The Alchemist",
-                Description = "The Alchemist is a novel by Brazilian author Paulo Coelho that was first published in 1988.",
-                Author = "Paulo Coelho",
-                Price = 280.00m
+                Title = "Da Vinci Code",
+                Description = "The Da Vinci Code is a 2003 mystery thriller novel by Dan Brown.",
+                Author = "Dan Brown",
+                Price = 900.00m
             };
 
             var jsonData = JsonConvert.SerializeObject(book);
@@ -75,7 +75,7 @@ namespace Wookie.Marketplace.API.Unit.Tests
             //Act
             var response = await httpClient.SendAsync(request);
 
-            //Asert
+            //Assert
             Assert.Equal(HttpStatusCode.Created, response.StatusCode);
         }
 
@@ -84,9 +84,10 @@ namespace Wookie.Marketplace.API.Unit.Tests
         {
             var book = new Book()
             {
-                Description = "The Alchemist is a novel by Brazilian author Paulo Coelho that was first published in 1988.",
-                Author = "Paulo Coelho",
-                Price = 280.00m
+                Description = "One of the most dynamic and globally recognized entertainment " +
+                "forces of our time opens up fully about his life, in a brave and inspiring book that traces his learning curve to a place where outer success",
+                Author = " Will Smith",
+                Price = 700.00m
             };
 
             var jsonData = JsonConvert.SerializeObject(book);
@@ -152,7 +153,7 @@ namespace Wookie.Marketplace.API.Unit.Tests
             //Act
             var response = await httpClient.SendAsync(request);
 
-            //Asert
+            //Assert
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
         }
 
@@ -165,7 +166,7 @@ namespace Wookie.Marketplace.API.Unit.Tests
             //Act
             var response = await httpClient.SendAsync(request);
 
-            //Asert
+            //Assert
             Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
         }
 

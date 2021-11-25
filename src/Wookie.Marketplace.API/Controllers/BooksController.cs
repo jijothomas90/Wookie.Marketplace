@@ -21,7 +21,7 @@ namespace Wookie.Marketplace.API.Controllers
         }
 
         /// <summary>
-        /// To retreive all books from the collection
+        /// API To retreive all books from the collection
         /// </summary>
         /// <returns>Collection of Books with HTTP status code 200</returns>
         [HttpGet]
@@ -30,6 +30,11 @@ namespace Wookie.Marketplace.API.Controllers
             return Ok(_bookRepo.GetAll());
         }
 
+        /// <summary>
+        /// API to retreive a particular book details using Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Single book details with HTTP status code 200/ If not found then HTTP status code 404</returns>
         [HttpGet]
         [Route("{id}")]
         [ProducesResponseType(200)]
@@ -44,6 +49,11 @@ namespace Wookie.Marketplace.API.Controllers
             return Ok(book);
         }
 
+        /// <summary>
+        /// API to add new book
+        /// </summary>
+        /// <param name="book"></param>
+        /// <returns>Created book with API path with HTTP status code 201/ If already exists then HTTP status code 409 </returns>
         [HttpPost]
         [ProducesResponseType(201)]
         [ProducesResponseType(409)]
@@ -60,6 +70,12 @@ namespace Wookie.Marketplace.API.Controllers
             }
         }
 
+        /// <summary>
+        /// API to update book based on Id with book details
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="book"></param>
+        /// <returns>HTTP status code 200 / HTTP status code 404</returns>
         [HttpPut]
         [Route("{id}")]
         [ProducesResponseType(200)]
@@ -79,6 +95,11 @@ namespace Wookie.Marketplace.API.Controllers
             }
         }
        
+        /// <summary>
+        /// API to delete book based on Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>HTTP status code 204 / HTTP status code 404</returns>
         [HttpDelete]
         [Route("{id}")]
         [ProducesResponseType(204)]

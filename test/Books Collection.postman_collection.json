@@ -37,7 +37,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "1"
+							"value": "2"
 						}
 					]
 				},
@@ -62,7 +62,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\"title\": \"Harry Potter\",\n\"description\" : \"Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling.\",\n\"author\":\"J. K. Rowling\",\n\"price\" : 500.00\n}"
+					"raw": "{\n\"title\": \"Will\",\n\"description\" : \"One of the most dynamic and globally recognized entertainment forces of our time opens up fully about his life, in a brave and inspiring book that traces his learning curve to a place where outer success\",\n\"author\":\"Will Smith\",\n\"price\" : 700.00\n}"
 				},
 				"description": ""
 			},
@@ -82,7 +82,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\"title\": \"The Alchemist\",\n\"description\" : \"The Alchemist is a novel by Brazilian author Paulo Coelho \",\n\"author\":\"Paulo C\",\n\"price\" : 1000.00\n}"
+					"raw": "{\n\"title\": \"The Alchemist\",\n\"description\" : \"The Alchemist is a novel by Brazilian author Paulo Coelho \",\n\"author\":\"Paulo C\",\n\"price\" : 900.00\n}"
 				},
 				"description": ""
 			},
